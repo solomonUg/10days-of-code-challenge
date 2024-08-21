@@ -97,6 +97,7 @@ sup{
 
 #zip {
     height: 38px;
+    width: 187px;
     padding: 10px;
     /* margin-right: 10px; */
     margin-top: 10px;
@@ -190,4 +191,8 @@ height: 50px;
             margin-right: 30px;
         
         }
+}
+
+@media screen and (max-width: ){
+    
 }
