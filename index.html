@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-section">
+        <div class="main">
+            <div class="text-container">
+                <div class="stroke"></div>
+                <div class="text">Responsive Registration Form</div>
+            </div>
+            <div class="form">
+                <div class="reg-form-text">Registration Form</div>
+                <form action="" >
+                    <label for="">Full Name <sup>*</sup></label> <br>
+                    <input type="text" name="name" id="name" required placeholder="Enter your full name"> <br>
+    
+                    <label for="address">Address</label> 
+                    <input type="text" name="address" id="address" placeholder="Enter your address"> <br>
+                    
+                    <label for="zip">Zip Code<sup>*</sup></label> 
+                    <input type="number" name="zip" id="zip" required placeholder="Enter zip code"> 
+    
+                    <label for="country">Country<sup>*</sup></label>
+                    <select name="country" id="country">
+                        <option value="Angola">Angola</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="ghana">Ghana</option>
+                    </select required> <br>
+    
+                    <label for="gender">Gender<sup>*</sup></label> <br>
+                    <div class="radio-group">
+
+                        <input type="radio" name="gender" id="male" value="male" required>
+                        <label for="male">Male</label>
+        
+                        <input type="radio" name="gender" id="female" value="female" required>
+                        <label for="female"> Female</label> <br>
+                    </div>
+                    
+                    <label for="preferences">preferences<sup>*</sup></label> <br>
+                    <div class="preference-group">
+                        <input type="checkbox" name="preferences" id="red" value="red" >
+                        <label for="red">Red</label>
+        
+                        <input type="checkbox" name="preferences" id="blue" value="blue" >
+                        <label for="blue">Blue</label>
+        
+                        <input type="checkbox" name="preferences" id="green" value="green" >
+                        <label for="green">Green</label> <br>
+                    </div>
+    
+                    <label for="phone">Phone Number<sup>*</sup></label>
+                    <input type="tel" name="phone" id="phone" required placeholder="Enter your phone number"> <br>
+    
+                    <label for="email">Email<sup>*</sup></label>
+                    <input type="email" name="email" id="email" required placeholder="Enter your email"> <br>
+    
+                    <label for="password">Password(6-8 characters)<sup>*</sup></label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" required> <br>
+    
+                    <label for="verifyPas">Verify Password<sup>*</sup></label>
+                    <input type="password" name="verifyPas" id="verifyPas" required placeholder="Enter your password again"> <br>
+                    <div class="submit-group">
+
+                        <input type="submit" value="SEND" id="send-btn">
+                        <input type="reset" value="CLEAR" id="clear-btn">
+        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <section>
+        <article>
+        </article>
+    </section>
+<script src="index.js"></script>
+</body>
+</html>

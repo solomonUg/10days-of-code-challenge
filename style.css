@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+
+
+.form-section {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.main {
+    width: 1550px;
+    min-height: 100vh;
+    background-color: #826afc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", system-ui;
+  font-weight: 800;
+  font-style: normal;
+  width: 50%;
+  color: white;
+
+}
+
+.stroke {
+    width: 30px;
+    height: 280px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.text {
+    font-size: 70px;
+    padding: 40px;
+}
+
+.form {
+    background-color: white;
+    width: 500px;
+    height: 800px;
+    border-radius: 10px;
+    
+}
+
+form {
+padding: 0 20px;
+color: rgba(0, 0, 0, 0.61);
+margin: 30px 0;
+}
+
+sup{
+    color: red;
+}
+
+.warning {
+    font-size: 10px;
+    color: red;
+}
+
+.reg-form-text {
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5rem;
+    /* margin: 0 15px; */
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.61);
+}
+
+#name, #address, #phone, #email, #password, #verifyPas {
+    width: 100%;
+    height: 38px;
+    padding: 10px;
+}
+
+/* #name[placeholder] {
+    font-size: 15px;
+} */
+
+#zip {
+    height: 38px;
+    padding: 10px;
+    /* margin-right: 10px; */
+    margin-top: 10px;
+}
+
+#country {
+    width: 110px;
+    height: 38px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.61);
+}
+
+.radio-group, .preference-group{
+    display: flex;
+    gap: 10px
+}
+
+.radio-group label {
+    margin-right: 270px;
+    
+}
+.preference-group label{
+    margin-right: 120px;
+
+}
+
+.submit-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+#send-btn, #clear-btn {
+height: 50px;
+}
+#send-btn {
+    background-color: green;
+    color: white;
+    border: 0;
+}
+
+#clear-btn {
+    background-color: red;
+    color: white;
+    border: 0;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 800px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        
+    
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .form{
+            width: 300px;
+            height: 800px;
+            margin-bottom: 30px;
+        }
+        
+        #zip {
+            /* margin-right: 10px; */
+            margin-bottom: 10px;
+        }
+
+        #country {
+          margin-bottom: 5px;
+        }
+
+        .radio-group label{
+            margin-right: 40px;
+        }
+
+        .preference-group label{
+            margin-right: 30px;
+        
+        }
+}
